@@ -1,0 +1,29 @@
+.navbar-nav :hover {
+    color: aqua;
+}
+
+i :hover {
+    color: red;
+}
+
+.search_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    background: #FF4A52;
+    width: 60px;
+}
+
+body {
+    background-color: lightgray;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.isi {
+    margin-top: 100px;
+}

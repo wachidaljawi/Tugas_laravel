@@ -24,4 +24,16 @@ Route::prefix('importir')->group(function () {
         $kontrak = ['Ina', 'UX Design', '085765342890'];
         return view('pegawai.desain', compact('karyawan', 'staff', 'kontrak'));
     });
+    Route::get('/digital_marketing', function () {
+        $karyawan = ['Erik jayadi', 'SEO', '089123445678'];
+        $staff = ['Ani', 'Google Analytic', '085677890'];
+        $kontrak = ['Ina', 'Media Social', '085765342890'];
+        return view('pegawai.digital_marketing', compact('karyawan', 'staff', 'kontrak'));
+    });
+    Route::get('/pengembang', function () {
+        $karyawan = ['Erik jayadi', 'SEO', '089123445678'];
+        $staff = ['Ani', 'Google Analytic', '085677890'];
+        $kontrak = ['Ina', 'Media Social', '085765342890'];
+        return view('pegawai.pengembang', compact('karyawan', 'staff', 'kontrak'));
+    });
 });
