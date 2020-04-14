@@ -18,10 +18,10 @@ Route::get('/', function () {
 });
 
 Route::prefix('importir')->group(function () {
-    Route::get('/karyawan', function () {
-        $karyawan = ['Erik jayadi', 'Ujang', 'Urip', 'Merip', 'Kurip'];
-        $staff = ['Ani', 'Una', 'Kiki', 'Ari', 'Mantap'];
-        $kontrak = ['Ina', 'Firman', 'Supri', 'Andi', 'Bedah'];
-        return view('pegawai.karyawan', compact('karyawan'));
+    Route::get('/desain', function () {
+        $karyawan = ['Erik jayadi', 'Adobe Ilustrator', '089123445678'];
+        $staff = ['Ani', 'UI Design', '085677890'];
+        $kontrak = ['Ina', 'UX Design', '085765342890'];
+        return view('pegawai.desain', compact('karyawan', 'staff', 'kontrak'));
     });
 });
